@@ -1,0 +1,23 @@
+name: Publish to PyPI
+description: Publish library to PyPI repository.
+on: release
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+    permissions: 
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+      - name: Install Python
+        run: uv python install
+      - name: Build Project
+        run: uv build
+      - name: Publish
+        run: uv publish
