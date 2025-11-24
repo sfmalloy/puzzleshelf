@@ -1,6 +1,6 @@
 [project]
 name = "puzzleshelf"
-version = "0.0.1"
+version = "0.0.1a1"
 description = "A code puzzle solving framework"
 readme = "README.md"
 authors = [
