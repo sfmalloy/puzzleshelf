@@ -1,6 +1,6 @@
 [project]
 name = "puzzleshelf"
-version = "0.0.1a2"
+version = "0.0.1a3"
 description = "A code puzzle solving framework"
 readme = "README.md"
 authors = [
@@ -12,3 +12,6 @@ dependencies = []
 [build-system]
 requires = ["uv_build>=0.9.7,<0.10.0"]
 build-backend = "uv_build"
+
+[tool.ruff.format]
+quote-style = 'single'
