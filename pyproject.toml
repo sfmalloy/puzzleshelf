@@ -15,3 +15,6 @@ build-backend = "uv_build"
 
 [tool.ruff.format]
 quote-style = 'single'
+
+[tool.ruff.lint]
+select = ["I"]
